@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from '../Card/Card'
+import './FiveDayForecast.scss'
 
 const FiveDayForecast = ({list}) => {
   console.log(list)

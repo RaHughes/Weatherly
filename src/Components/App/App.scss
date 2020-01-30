@@ -1,5 +1,34 @@
+* {
+  margin: 0%;
+}
 .App {
   text-align: center;
+
+  h1 {
+    margin-bottom: 2%;
+    border: 4px solid black;
+    padding: 2%;
+  }
+
+  .main_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .back_button {
+    height: 35px;
+    width: 40%;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0 0 10px red;
+      transition: 0.4s;
+    }
+  }
+
+  .five_day_header {
+    border-bottom: 4px solid black;
+  }
 }
 
 

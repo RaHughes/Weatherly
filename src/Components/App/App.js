@@ -30,16 +30,15 @@ class App extends Component {
   render() {
     return (
       <main className='App'>
-        <h1 className='title'> Weatherly </h1>
+        <h1 className='title'> Simple Weather </h1>
         {this.state.data.length === 0 ? 
-        <div>
-        <h2>Welcome!</h2>
+        <header>
         <Form findCity={this.findCity}/>
-        </div> : 
-        <div>
-        <button onClick={() => window.location.reload()}> Back </button>
+        </header> : 
+        <div className='main_section'>
+        <button className='back_button' onClick={() => window.location.reload()}> Back </button>
         <CurrentWeather data={this.state.data}/>
-        <h2>Five Day Forecast</h2>
+        <h2 className='five_day_header'>Five Day Forecast</h2>
         <FiveDayForecast list={this.state.data.list}/>
         </div>}
       </main>

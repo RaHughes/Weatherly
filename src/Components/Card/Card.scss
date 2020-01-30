@@ -1,11 +1,18 @@
 .cards {
-  padding: 10px;
+  padding: 5%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   min-height: 100vh;
 
-  div {
+  .card {
+    height: 200px;
+    width: 400px;
     border: 2px solid black;
+    margin: 5%;
+    &:hover {
+      box-shadow: 0 0 10px red;
+      transition: 0.4s;
+    }
   }
 }
 

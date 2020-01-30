@@ -1,4 +1,5 @@
-import React, {Component} from 'react'
+import React, {Component} from 'react';
+import './Form.scss'
 
 export default class Form extends Component {
   constructor(props) {
@@ -21,7 +22,8 @@ export default class Form extends Component {
 
   render() {
     return(
-      <div>
+      <div className='form'>
+      <h2>Welcome!</h2>
       <input 
       type='text' 
       placeholder='Input Your City' 
@@ -30,7 +32,7 @@ export default class Form extends Component {
       onChange={this.handleChange}/>
       <input
       type='text'
-      placeholder='Input Your Country Code'
+      placeholder='Input Your Country Code (Usa, Ru, Uk...)'
       value={this.state.country}
       name='country'
       onChange={this.handleChange} />
