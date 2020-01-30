@@ -14,4 +14,5 @@ This app is a high speed, low drag weather application. Initially a Form is appe
 - Run ```npm install``` in your console.
 - Once that is complete run ```npm start``` in your console.
 
-
+![Screen Shot of Form](https://github.com/RaHughes/Weatherly/blob/master/public/ss1.png)
+![Screen Shot of Forecast](https://github.com/RaHughes/Weatherly/blob/master/public/ss2.png)
