@@ -2,7 +2,6 @@ import React from 'react';
 import './CurrentWeather.scss'
 
 const CurrentWeather = ({data}) => {
-  console.log(data)
   return(
     <article className="current-weather">
         <p> Current City: {data.city.name}</p>

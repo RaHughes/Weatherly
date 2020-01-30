@@ -1,11 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { shallow } from 'enzyme';
 import Card from './Card';
 
 describe('Card', () => {
   it('Should match the snapshot of the DOM', () => {
-    const wrapper = shallow(<Card />)
-    expect(wrapper).toMatchSnapShot();
+    const mockData = [{ 
+      dt_txt: 'date', 
+      weather: [{icon: 'img'}], 
+      main: { temp_max: 250, temp_min: 240 }
+      }]
+      
+    const wrapper = shallow(<Card data={mockData}/>)
+    expect(wrapper).toMatchSnapshot();
   })
 })
