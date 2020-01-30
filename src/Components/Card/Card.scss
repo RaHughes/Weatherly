@@ -1,17 +1,24 @@
 .cards {
-  padding: 5%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   min-height: 100vh;
-
+  
   .card {
+    justify-content: space-between;
     height: 200px;
     width: 400px;
     border: 2px solid black;
-    margin: 5%;
+    margin: 10%;
+    background-color: lightgray;
     &:hover {
-      box-shadow: 0 0 10px red;
+      box-shadow: 0 0 10px blue;
       transition: 0.4s;
+
+    }
+      img {
+      border: 2px solid gray;
+      border-radius: 50%;
+      background-color: gray;
     }
   }
 }

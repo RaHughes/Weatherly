@@ -24,7 +24,6 @@ class App extends Component {
   findCity = (city, country) => {
     this.setState({ city: city, country: country})
     this.loadCity(city, country)
-    console.log(this.state.city)
   }
 
   render() {

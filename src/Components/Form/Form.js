@@ -12,7 +12,6 @@ export default class Form extends Component {
 
   handleChange = e => {
     this.setState({[e.target.name]: [e.target.value]})
-    console.log(this.state.city)
   }
 
   submitInfo = () => {
@@ -22,6 +21,7 @@ export default class Form extends Component {
 
   render() {
     return(
+      <section className='form_section'>
       <div className='form'>
       <h2>Welcome!</h2>
       <input 
@@ -38,6 +38,7 @@ export default class Form extends Component {
       onChange={this.handleChange} />
       <button onClick={() => this.submitInfo()}>Search</button>
       </div>
+      </section>
     )
   }
 }
