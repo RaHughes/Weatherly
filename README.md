@@ -9,9 +9,9 @@ This app is a high speed, low drag weather application. Initially a Form is appe
 - Jest
 
 ## Deployment
-1.) Clone down this repository.
-2.) CD into this repository in your terminal.
-3.) Run ```npm install``` in your console.
-4.) Once that is complete run ```npm start``` in your console.
+- Clone down this repository.
+- CD into this repository in your terminal.
+- Run ```npm install``` in your console.
+- Once that is complete run ```npm start``` in your console.
 
 
